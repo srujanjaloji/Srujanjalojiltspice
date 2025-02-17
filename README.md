@@ -29,42 +29,44 @@ Aim:To determine the DC operating point, calculate the gain using transient and 
    3.AC analysis:
      Inorder to perform the ac analysis we need to select the ac analysis option in the edit 
      simulation command and we should give the values as shown below
-     ![Screenshot 2025-02-17 203123](https://github.com/user-attachments/assets/7cc4caec-efdc-488a-847f-b6e265d70d07)
+     
+   ![Screenshot 2025-02-17 203123](https://github.com/user-attachments/assets/7cc4caec-efdc-488a-847f-b6e265d70d07)
 
 
-     the graph shown is the ac analysis
-     ![Screenshot 2025-02-17 203720](https://github.com/user-attachments/assets/52015575-16f9-4f65-9886-aa72478814f0)
+   the graph shown is the ac analysis
+     
+   ![Screenshot 2025-02-17 203720](https://github.com/user-attachments/assets/52015575-16f9-4f65-9886-aa72478814f0)
 
 
 
-     Result:
+   Result:
 
-     1.DC analysis:
+   1.DC analysis:
 
-     The calculated drain current aligns with the expected value based on power and voltage, 
-     with Id = 27uA. By adjusting the MOSFET's channel dimensions L = 180nm and W = 72.2um the 
-     current requirement was successfully met. The circuit performs as expected under DC 
-     conditions.
+   The calculated drain current aligns with the expected value based on power and voltage, 
+   with Id = 27uA. By adjusting the MOSFET's channel dimensions L = 180nm and W = 72.2um the 
+   current requirement was successfully met. The circuit performs as expected under DC 
+   conditions.
 
-     2.Transient Analysis:
+   2.Transient Analysis:
 
-     The transient response graph shows the circuit's behavior over time. The response is 
-     smooth, with no unexpected delays or distortions. The circuit reacts appropriately to 
-     changes, indicating that it is stable and functions as expected.
+   The transient response graph shows the circuit's behavior over time. The response is 
+   smooth, with no unexpected delays or distortions. The circuit reacts appropriately to 
+   changes, indicating that it is stable and functions as expected.
 
-     3.AC Analysis
+   3.AC Analysis
 
-     The ac response graph confirms us that the circuit will remain stable at different 
-     frequencies,the circuit mainitains its performance across the tested frequency range.
+   The ac response graph confirms us that the circuit will remain stable at different 
+   frequencies,the circuit mainitains its performance across the tested frequency range.
 
-    Inference
+   Inference
 
-    The experiment confirms that by selecting the appropriate MOSFET dimensions, the drain 
-    current can be effectively controlled.The width of the MOSFET significantly impacts the 
-    drain current, indicating that any variation in width directly affects the output current.
-    Increasing the width results in a higher Id, while decreasing the width reduces Id.The 
-    design aligns with theoretical predictions and matches the practical values observed 
-    in the experiment.
+   The experiment confirms that by selecting the appropriate MOSFET dimensions, the drain 
+   current can be effectively controlled.The width of the MOSFET significantly impacts the 
+   drain current, indicating that any variation in width directly affects the output current.
+   Increasing the width results in a higher Id, while decreasing the width reduces Id.The 
+   design aligns with theoretical predictions and matches the practical values observed 
+   in the experiment.
 
 
 # Design-2
