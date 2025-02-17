@@ -30,14 +30,14 @@ Aim:To determine the DC operating point, calculate the gain using transient and 
 
      Result:
 
-     DC analysis
+     DC analysis:
 
      The calculated drain current aligns with the expected value based on power and voltage, 
      with Id = 27uA. By adjusting the MOSFET's channel dimensions L = 180nm and W = 72.2um the 
      current requirement was successfully met. The circuit performs as expected under DC 
      conditions.
 
-     Transient Analysis
+     Transient Analysis:
 
      The transient response graph shows the circuit's behavior over time. The response is 
      smooth, with no unexpected delays or distortions. The circuit reacts appropriately to 
@@ -45,18 +45,31 @@ Aim:To determine the DC operating point, calculate the gain using transient and 
 
      AC Analysis
 
-    The AC response graph confirms that the circuit remains stable across various frequencies. 
-    the gain of -9.94 dB and the phase shift, which is nearly 180deg, align with theoretical 
-    expectaions. The circuit consistently performs well throughout the tested frequency range.
+     The ac response graph confirms us that the circuit will remain stable at different 
+     frequencies,the circuit mainitains its performance across the tested frequency range.
 
     Inference
 
     The experiment confirms that by selecting the appropriate MOSFET dimensions, the drain 
-    current can be effectively controlled. The width of the MOSFET significantly impacts the 
-    drain current, indicating that any variation in width directly affects the output current. 
+    current can be effectively controlled.
+    The width of the MOSFET significantly impacts the 
+    drain current,
+    indicating that any variation in width directly affects the output current.
+    
     Increasing the width results in a higher Id, while decreasing the width reduces Id. The 
     design aligns with theoretical predictions and matches the practical values observed in the 
     experiment.
+
+
+
+# Design-2
+Aim: To find the DC operating point and hence find the gain using transient analysis and AC analysis
+
+Components: Mosfets(M1 and M2),DC power supply
+
+Procedure:
+
+Make the circuit connection
 
      
 
