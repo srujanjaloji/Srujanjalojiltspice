@@ -12,25 +12,25 @@ A differential amplifier consists of two transistors, M1 and M2, with their sour
 Procedure : Make the circuit connection as given above. connect the resister at the source terminal of both mosfet now calculate the value of Iss as power and vdd is given and calculate the Id1 and Id2 now calculate the Rss and Rd
 
 To find the all the values of resistor and current value. we need solve the given queston specification.
-P=3mA
+P=2.5mA
 
-Iss=P/VDD=3*10^3/3.3=0.909mA
+Iss=P/VDD=2.5*10^-3/3.3=0.7575mA
 
-Is1=Is2=Iss/2=0.4545mA
+Is1=Is2=Iss/2=0.3787mA
 
-RD=VDD-Vocm/Iss=3.3-1.7/0.45*10^3=3.55kΩ
+RD=VDD-Vocm/Iss=3.3-1.81/0.3787*10^3=3.93kΩ
 
-Rss=Vp/Iss=0.5/0.909*10^3=0.555kΩ
+Rss=Vp/Iss=0.7/0.757*10^-3=0.924kΩ
 
 Finially by solving we get
 
-Iss=0.909mA
+Iss=0.7575mA
 
-I1=I2=0.4545mA
+I1=I2=0.3787mA
 
-RD=3.55kΩ
+RD=3.93kΩ
 
-Rss=0.555kΩ
+Rss=0.924kΩ
 
 
 # Circuit-1
@@ -40,7 +40,7 @@ Components Required: MOSFET(M1,M2 and M3), Resistor,voltage supply's
 
 
 
-Now to get the desired values of output voltage and current we have to vary the width and length of both the mosfet we got Length=180nm and width=1.810um
+Now to get the desired values of output voltage and current we have to vary the width and length of both the mosfet we got Length=180nm and width=2.0558um
 
 ![Screenshot 2025-03-09 223254](https://github.com/user-attachments/assets/44c83e0e-02f1-45db-8d40-979793f962b5)
 
@@ -59,9 +59,9 @@ To perform transient analysis we have to select the transient analysis in the ed
 voltage gain 
 AV=voutp-p/vinp-p
 
-AV=(1.768-1.632)/(1.697-1.601)
+AV=(1.875-1.7504)/(1.7705-1.6709)
 
-AV=1.424
+AV=1.251
 
 # AC analysis:
 TO perform AC analysis we have to select the ac analysis in the edit simulation command given the values as shown below
@@ -70,9 +70,9 @@ TO perform AC analysis we have to select the ac analysis in the edit simulation 
 
 Gain in db= 20log(AV)
 
-  =20log(1.424)
+  =20log(1.251)
  
-  =3.0707
+  =1.945
 
   # Circuit-2:
   Now replace the R3 resister with a current source : connect a current souce of 0.9mA
@@ -101,9 +101,9 @@ we have to give deg of 180deg to one mosfet and 0deg to the other mosfet and ac 
 voltage gain 
 AV=voutp-p/vinp-p
 
-AV=(1.83-1.5702)/(1.7-1.6)
+AV=(1.9708-1.6531)/(1.7709-1.6684)
 
-AV=2.598
+AV=3.09951
 
 # AC analysis:
 ![Screenshot 2025-03-09 225746](https://github.com/user-attachments/assets/b9d0000f-8f5a-491f-b931-c10e020ea144)
@@ -113,7 +113,7 @@ Gain in db= 20log(AV)
 
   =20log(2.598)
 
-  =8.292
+  =9.825
 
   # Circuit-3:
 Now replace the R3 resister with a Mosfet : Given vp=0.4v and wkt vt=0.36v we got the gate voltage of the new mosfet as 0.866v
@@ -149,23 +149,19 @@ give ac amplitude as 1 for one mosfet and 0 for other mosfet
 
 
 # INFERENCE:
-In this experiment, we seen the working principles of a differential amplifier and its types and configuration.
+In this experiment, we seen the operating principles of a differential amplifier and its types and setups.  
 
-There are three types of configurations were implemented: resistor , current source , and an NMOS . All the implements work on different ways that results into the cahnge in Voltage gain and stabillity of a mosfet.
+There are three kinds of setups were used: resistor, current source, and NMOS. All the setups work in different ways, which causes a change in Voltage gain and stability of a MOSFET.  
 
-when resistor is connected it provides low CMRR,deduce gain voltage,but high bandwidth and also provide negative feedback
+ When resistor is connected, it gives low CMRR, lower voltage gain, but high bandwidth, and it also provides negative feedback.  
+ But when using a current source, it works opposite to the resistor setup because it has higher voltage gain, higher CMRR, but a little reduced bandwidth than the resistor setup.  
+ The CMOSN setup gives the highest voltage gain among all.  
 
-But in the case of current source connection it is reciprocal of resistor connection because it has high gain volatge, high CMRR,but slight reduce in the bandwidth compared to the resistor connection.
+From this, we can understand which setup is useful in which situation:  
 
-Highest gain volltage is drewn by the circuit of CMOSN connection
-
-By this we can say at what time/situation is required we can use that configuration.
-
-1.Need more Band width-Use Resistor configuration
-
-2.Need more Gain-Use CMOSN Configuration
-
-3.Need precise CMRR-Use current or CMOSN configuration
+1. Need more Bandwidth -  Use Resistor setup  
+2. Need more Gain - Use CMOSN setup  
+3. Need better CMRR - Use Current source or CMOSN setup
 
 
 
