@@ -75,7 +75,7 @@ Gain in db= 20log(AV)
   =1.945
 
   # Circuit-2:
-  Now replace the R3 resister with a current source : connect a current souce of 0.9mA
+  Now replace the R3 resister with a current source : connect a current souce of 0.7575mA
 
 ![Screenshot 2025-03-09 225638](https://github.com/user-attachments/assets/e851919d-0a4a-41c9-9400-8ef9075614d2)
 
@@ -116,7 +116,7 @@ Gain in db= 20log(AV)
   =9.825
 
   # Circuit-3:
-Now replace the R3 resister with a Mosfet : Given vp=0.4v and wkt vt=0.36v we got the gate voltage of the new mosfet as 0.866v
+Now replace the R3 resister with a Mosfet : Given vp=0.7v and wkt vt=0.36v we got the gate voltage of the new mosfet as 0.866v
 
 ![Screenshot 2025-03-09 234444](https://github.com/user-attachments/assets/cfc48ad8-6cb0-4468-b52a-12b8bc7c97b6)
 
